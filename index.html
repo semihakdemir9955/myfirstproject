@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMUTLUYUM</title>
+  <link  rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <h1 id="title">En Çok Hangi Takım</h1>
+<p id="description">
+   En çok hangi takımın taraftarı var?
+   <br>
+   Öğrenmek mi istiyorsun?
+   <br>
+   Ankete katıl ve sonuçları gör.
+</p>
+<form id="survey-form">
+  <div id="name-div">
+    <label id="name-label">Adınız:
+      <input id="name-input" type="text" required placeholder="adınız"/>
+    </label>
+  </div>
+  <div id="surname-div">
+    <label id="surname-label">Soyad:
+      <input id="surname-input" type="text" placeholder="soyadınız" required/>
+    </label>
+  </div>
+  <div id="email-div">
+    <label id="email-label">E-posta:
+      <input id="email-input" type="email" placeholder="e-posta" required/>
+    </label>
+  </div>
+  <div id="age-div">
+    <label id="age-label">Yaşınız:
+      <input id="age-input" type="number" min="9" max="80" placeholder="yaş" required/>
+    </label>
+  </div id="select-div">Sitemize nasıl ulaştınız?
+  <select id="dropdown">
+    <option>(select one)</option>
+    <option>Sosyal medya</option>
+    <option>Arkadaş  tavsiyesi</option>
+     <option>Kendim buldum</option>
+  </select>
+<div>
+  <p>Hangi takımın taraftırısın?</p>
+</div>
+<fieldset>
+<label for="galata-label" >
+  <input type="radio" name="galata-input" id="galata" class="inline"/> GALATASARAY
+</label>
+<label for="fener-label" >
+  <input type="radio" name="fener-input" id="fener" class="inline"/> FENERBAHÇE
+  </label>
+<label for="besik-label" >
+  <input type="radio" name="besik-input" id="besik" class="inline"/> BEŞİKTAŞ
+  </label>
+<label>
+  <input type="checkbox" required />I accept the terms and conditions
+</label>
+</fieldset>
+<label>Yorumunuz:
+  <textarea rows="3" cols="30" placeholder="yorumunz" id="text"></textarea>
+</label>
+ <input type="submit" value="Submit"/>
+
+</form>
+  
+</body>
+</html>
